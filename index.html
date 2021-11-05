@@ -1,0 +1,34 @@
+<html class="no-js bg" lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后浪blog</title>
+    <link rel="icon" type="image/ico" href="https://www.mdzz.wiki/usr/uploads/2020/04/3034685690.ico">
+    <meta name="description" content="吾生也有涯, 而知也无涯. 以有涯随无涯, 殆已!"/>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        iframe {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<iframe id="My_Blog" height="100%" width="100%" src="https://www.mdzz.wiki/"></iframe>
+</body>
+
+<script>
+    let My_blog = document.querySelector('#My_Blog')
+    window.onload = function () {
+        My_blog.contentWindow.postMessage("后浪Blog", "https://www.mdzz.wiki/")
+        setInterval(function () {
+            My_blog.contentWindow.postMessage("后浪Blog", "https://www.mdzz.wiki/")
+        },50)
+    }
+
+</script>
+</html>
