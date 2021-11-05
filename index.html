@@ -21,14 +21,4 @@
 <iframe id="My_Blog" height="100%" width="100%" src="https://www.mdzz.wiki/"></iframe>
 </body>
 
-<script>
-    let My_blog = document.querySelector('#My_Blog')
-    window.onload = function () {
-        My_blog.contentWindow.postMessage("阳光少年", "https://www.mdzz.wiki/")
-        setInterval(function () {
-            My_blog.contentWindow.postMessage("阳光少年", "https://www.mdzz.wiki/")
-        },50)
-    }
-
-</script>
 </html>
